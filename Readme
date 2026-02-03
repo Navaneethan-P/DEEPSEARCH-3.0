@@ -1,0 +1,127 @@
+ **INSTRUCTIONS**
+
+1. Go to your main folder `DEEPSEARCH_ZEROTRUST`.
+2. Create a new file named `README.md`.
+3. **Paste** the following text inside.
+
+# DEEPSEARCH ARSENAL | ZERO TRUST ARCHITECTURE (v8.1)
+
+> **"Trust No One. Verify Everything."**
+
+![Status](https://img.shields.io/badge/Status-Operational-green) ![Platform](https://img.shields.io/badge/Platform-Windows_PowerShell-blue) ![Version](https://img.shields.io/badge/Version-v8.1_Enterprise-cyan)
+
+**DeepSearch Arsenal** is a military-grade cybersecurity framework designed for Windows environments. Unlike standard script collections, it operates on a **Zero Trust Kernel Architecture**, forcing strict verification for every process. It combines Offensive Red Team capabilities, Defensive Blue Team hardening, and advanced OSINT reconnaissance into a single, modular Hypervisor.
+
+---
+
+## ⚡ Key Features
+
+* **Kernel Hypervisor (v8.1):** A central command center that manages all subsystems with error handling and crash protection.
+* **Modular Architecture:** Tools are isolated into 5 operational divisions (OSINT, DEFENSE, OFFENSE, NET_OPS, MAINTENANCE).
+* **Zero Trust Vault:** Critical data is encrypted using **AES-256** standards.
+* **Watchdog Protocol:** Background monitoring system that ensures the Kernel remains active and uncompromised.
+* **Stealth Mode:** Tools operate largely in memory to minimize forensic footprint.
+
+---
+
+## 📂 System Architecture
+
+The system is organized into a strict hierarchy:
+
+```text
+DEEPSEARCH_ZEROTRUST/
+├── 💀 BOOTLOADER/         # System Startup & Integrity Checks
+├── 🧠 CORE_ENGINE/        # The Kernel (Brain of the system)
+├── 🔒 VAULT/              # Encrypted Storage (AES-256)
+├── 💾 DATA/               # Logs, Loot, and Performance History
+└── 🛠 MODULES/            # Operational Tools
+    ├── 🕵️ OSINT/          # Intelligence Gathering
+    ├── 🛡 DEFENSE/        # System Hardening & Traps
+    ├── ⚔️ OFFENSE/        # Red Team & Stress Testing
+    ├── 📡 NET_OPS/        # Network Stealth & Firewall
+    └── 🔧 MAINTENANCE/    # Health & Forensic Cleaning
+
+```
+
+---
+
+## 🛠 The Arsenal (Tool List)
+
+### 1. 🕵️ OSINT (Intelligence)
+
+* **Social Profile Scanner:** Hunts a target username across 50+ social media platforms.
+* **Vehicle Recon:** Analyzes vehicle plates to identify region and automates registry/challan searches.
+* **Phone Recon:** Extracts digital footprints from phone numbers (WhatsApp, TrueCaller, UPI).
+* **Metadata Stripper:** "Digital Shredder" that removes GPS/EXIF data from photos for safe uploading.
+* **Ghost Protocol:** (Legacy) System clipboard and history forensics.
+
+### 2. 🛡 DEFENSE (Blue Team)
+
+* **NIST Scout:** Audits system security against US Gov (NIST/CIS) benchmarks. Returns a Compliance Score (0-100%).
+* **Ransomware Shield:** Creates a heuristic "Canary Trap" file. If modified, it locks the system and sounds an alarm.
+* **Active Deception:** Deploys fake honey-tokens to confuse attackers.
+* **USB Sentry:** Monitors and logs USB insertion events.
+
+### 3. ⚔️ OFFENSE (Red Team)
+
+* **Wifi Harvester:** Extracts and decrypts cleartext passwords for all previously connected Wi-Fi networks.
+* **Packet Storm:** Network Stress Tester (DoS Simulator) to validate firewall rules.
+* **Shadow Login:** Social Engineering tool that mimics a Windows Update screen to capture credentials.
+* **Time Machine:** System snapshot and restore utility.
+
+### 4. 📡 NET_OPS (Network Operations)
+
+* **Net Ghost:** The Identity Shifter. Automates MAC Spoofing and DNS Hopping (Cloudflare/Quad9).
+* **Port Fortress:** Visual Firewall Manager. Block/Allow ports (e.g., `block 445`) via simple commands.
+* **Save Me:** Emergency panic button to kill network connections.
+
+### 5. 🔧 MAINTENANCE (Forensics)
+
+* **Titan Health:** Predictive maintenance engine. Logs performance history to predict hardware failure.
+* **Virus Terminator:** Forensic malware cleaner. Scans specific drives and unhides data on infected USBs.
+* **AES Crypt:** The core encryption engine used by the Vault.
+
+---
+
+## 🚀 Installation & Usage
+
+### Prerequisites
+
+* Windows 10 / 11
+* PowerShell 5.1 or newer
+* Administrator Privileges (Required for Packet Storm & Net Ghost)
+
+### Installation
+
+1. Clone the repository or extract the `DEEPSEARCH_ZEROTRUST` folder.
+2. Run the **Installer** (creates the Desktop Shortcut):
+```powershell
+# Run in PowerShell Admin
+. .\Setup_Shortcut.ps1
+
+```
+
+
+
+### Operation
+
+1. **Launch:** Double-click the `DEEPSEARCH ARSENAL` shortcut on your Desktop.
+2. **Navigation:** Use the numeric keys (`1-5`) to enter Divisions.
+3. **Execution:** Select a tool from the Sub-Menu.
+4. **Exit:** Press `0` to perform a clean shutdown and save state.
+
+---
+
+## ⚠️ Legal Disclaimer
+
+**DEEPSEARCH ARSENAL is a cybersecurity framework developed for educational and defensive purposes only.**
+
+* **Authorized Use Only:** The Offensive (Red Team) tools must only be used on systems you own or have explicit permission to test.
+* **No Liability:** The architect (Navaneethan.P) is not responsible for any misuse, damage, or illegal activities performed using this software.
+* **Data Privacy:** All data collected (Wifi passwords, Keystrokes) is stored locally in the `\DATA` directory. No data is sent to the cloud.
+
+---
+
+**Architect:** Navaneethan.P
+**License:** Proprietary / Private Use
+
